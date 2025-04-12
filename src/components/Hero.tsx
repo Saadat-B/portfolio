@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -34,7 +34,7 @@ const Hero = () => {
             <div className="flex mt-8 space-x-4">
               <Button variant="ghost" size="icon" asChild>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Saadat-B"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -44,7 +44,7 @@ const Hero = () => {
               </Button>
               <Button variant="ghost" size="icon" asChild>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/saadat-badgujar-ba85b5211/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -53,9 +53,15 @@ const Hero = () => {
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <a href="mailto:hello@example.com">
+                <a href="mailto:saadatbadgujar@google.com">
                   <Mail className="h-5 w-5" />
                   <span className="sr-only">Email</span>
+                </a>
+              </Button>
+              <Button variant="ghost" size="icon" asChild>
+                <a href="https://x.com/saadat_1997" target="_blank">
+                  <Twitter className="h-5 w-5" />
+                  <span className="sr-only">Twitter</span>
                 </a>
               </Button>
             </div>

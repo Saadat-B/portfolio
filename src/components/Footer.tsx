@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Mail, ArrowUp } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowUp, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="flex space-x-4">
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/Saadat-B"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -46,7 +46,7 @@ const Footer = () => {
             </Button>
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/saadat-badgujar-ba85b5211/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -55,9 +55,19 @@ const Footer = () => {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="mailto:hello@example.com">
+              <a href="mailto:saadatbadgujar@google.com">
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
+              </a>
+            </Button>
+            <Button variant="ghost" size="icon" asChild>
+              <a
+                href="https://x.com/saadat_1997"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Twitter className="h-5 w-5" />
+                <span className="sr-only">Twitter</span>
               </a>
             </Button>
           </div>

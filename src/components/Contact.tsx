@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -8,27 +7,27 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: Github,
-    url: "https://github.com",
-    color: "hover:bg-black hover:text-white"
+    url: "https://github.com/Saadat-B",
+    color: "hover:bg-black hover:text-white",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    url: "https://linkedin.com",
-    color: "hover:bg-[#0A66C2] hover:text-white"
+    url: "https://www.linkedin.com/in/saadat-badgujar-ba85b5211/",
+    color: "hover:bg-[#0A66C2] hover:text-white",
   },
   {
     name: "Twitter",
     icon: Twitter,
-    url: "https://twitter.com",
-    color: "hover:bg-[#1DA1F2] hover:text-white"
+    url: "https://x.com/saadat_1997",
+    color: "hover:bg-[#1DA1F2] hover:text-white",
   },
   {
     name: "Email",
     icon: Mail,
-    url: "mailto:hello@example.com",
-    color: "hover:bg-primary hover:text-primary-foreground"
-  }
+    url: "mailto:saadatbadgujar@google.com",
+    color: "hover:bg-primary hover:text-primary-foreground",
+  },
 ];
 
 const Contact = () => {
@@ -46,24 +45,32 @@ const Contact = () => {
             <CardContent className="p-6">
               <div className="flex flex-wrap justify-center gap-4">
                 {socialLinks.map((link) => (
-                  <Button 
-                    key={link.name} 
-                    variant="outline" 
-                    size="lg" 
+                  <Button
+                    key={link.name}
+                    variant="outline"
+                    size="lg"
                     className={`transition-colors ${link.color}`}
                     asChild
                   >
-                    <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <link.icon className="mr-2 h-5 w-5" />
                       {link.name}
                     </a>
                   </Button>
                 ))}
               </div>
-              
+
               <div className="mt-8 text-center">
                 <Button variant="default" asChild>
-                  <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Download Resume
                   </a>
