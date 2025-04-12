@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -41,7 +40,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex justify-between items-center">
         <a href="#home" className="text-xl font-bold text-primary">
-          Dev<span className="text-secondary">Portfolio</span>
+          Saadat<span className="text-secondary">.</span>
         </a>
 
         {/* Desktop Navigation */}

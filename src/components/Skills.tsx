@@ -1,8 +1,7 @@
-
 import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Server, PencilRuler } from "lucide-react";
+import { Code, Server, PencilRuler, Lightbulb } from "lucide-react";
 
 type SkillCategory = {
   title: string;
@@ -14,18 +13,55 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Frontend",
     icon: Code,
-    skills: ["HTML/CSS", "JavaScript", "React", "TypeScript", "Next.js", "Tailwind CSS", "Material UI", "Vue.js"]
+    skills: [
+      "HTML/CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Chart.js", // you've used it in financial calculators
+    ],
   },
   {
     title: "Backend",
     icon: Server,
-    skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "GraphQL", "REST APIs", "Firebase", "AWS"]
+    skills: [
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Prisma",
+      "Firebase Auth",
+      "MongoDB",
+      "REST APIs",
+      "AWS",
+    ],
   },
   {
     title: "Tools & Other",
     icon: PencilRuler,
-    skills: ["Git/GitHub", "Docker", "Jest", "CI/CD", "Webpack", "Figma", "Agile/Scrum", "Technical Writing"]
-  }
+    skills: [
+      "Git/GitHub",
+      "Docker",
+      "Figma",
+      "Agile/Scrum",
+      "VS Code",
+      "Vite", // from React frontend work
+      "TurboRepo", // you've used it for monorepos
+    ],
+  },
+  {
+    title: "Exploring",
+    icon: Lightbulb, // assuming you have this icon, or similar
+    skills: [
+      "Go (Golang)",
+      "Solana & Web3",
+      "CLI tools",
+      "Open-source Contributions",
+      "AI Integrations (LangChain, LLMs)",
+      "Redis (Pub/Sub)", // you’ve explored this for scalability
+    ],
+  },
 ];
 
 const Skills = () => {
@@ -50,10 +86,14 @@ const Skills = () => {
                   </div>
                   <h3 className="text-xl font-semibold">{category.title}</h3>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
-                    <Badge key={skill} variant="secondary" className="px-3 py-1 text-sm">
+                    <Badge
+                      key={skill}
+                      variant="secondary"
+                      className="px-3 py-1 text-sm"
+                    >
                       {skill}
                     </Badge>
                   ))}
