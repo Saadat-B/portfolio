@@ -67,7 +67,7 @@ const Contact = () => {
               <div className="mt-8 text-center">
                 <Button variant="default" asChild>
                   <a
-                    href="/resume.pdf"
+                    href="/saadat_resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
