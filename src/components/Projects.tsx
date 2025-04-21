@@ -73,7 +73,7 @@ const projects: Project[] = [
     ],
     github: "https://github.com/Saadat-B/hacker-terminal",
     live: "https://hackerterminal.saadat.app/",
-    category: ["frontend"],
+    category: ["vibeCoding"],
   },
 ];
 
@@ -82,6 +82,7 @@ const filters = [
   { label: "Frontend", value: "frontend" },
   { label: "Backend", value: "backend" },
   { label: "Full Stack", value: "fullstack" },
+  { label: "Vibe Coding", value: "vibeCoding" },
 ];
 
 const Projects = () => {
